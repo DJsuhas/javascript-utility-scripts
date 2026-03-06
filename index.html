@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Utility Scripts</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        button {
+            padding: 8px 15px;
+            margin: 5px;
+        }
+
+        input {
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>JavaScript Utility Scripts Demo</h1>
+
+<hr>
+
+<h2>1. Button Click Example</h2>
+<p id="message">Click the button to change text</p>
+<button id="btn">Click Me</button>
+
+<hr>
+
+<h2>2. Simple Calculator</h2>
+<input type="number" id="num1" placeholder="Enter first number">
+<input type="number" id="num2" placeholder="Enter second number">
+<button onclick="addNumbers()">Add</button>
+<p id="result"></p>
+
+<hr>
+
+<h2>3. Digital Clock</h2>
+<h3 id="clock"></h3>
+
+<hr>
+
+<h2>4. Form Validation</h2>
+<form onsubmit="return validateForm()">
+    <input type="text" id="name" placeholder="Enter your name">
+    <button type="submit">Submit</button>
+</form>
+
+<hr>
+
+<h2>5. Counter App</h2>
+<h3 id="counter">0</h3>
+<button onclick="increase()">Increase</button>
+<button onclick="decrease()">Decrease</button>
+
+<hr>
+
+<h2>6. Dark Mode Toggle</h2>
+<button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+<!-- JavaScript Files -->
+<script src="script.js"></script>
+<script src="calculator.js"></script>
+<script src="time.js"></script>
+<script src="validation.js"></script>
+<script src="counter.js"></script>
+<script src="darkmode.js"></script>
+
+</body>
+</html>
